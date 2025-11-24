@@ -1,0 +1,28 @@
+/*
+ * Theme Name:		GWT-Wordpress 27.0.0
+ * Theme URI:		https://bit.ly/gwtversions
+ * Description:		Custom WordPress theme based on the draft Unified Web Content Policy 
+ *					prepared by the PCDSPO, DOST-ASTI, and DOST-ICTO. Theme is built on 
+ *					HTML5 responsive WordPress framework based on ZURB's Foundation.
+ * Version:			27.0.0v2
+ * Author:			J.K. | GWHS Team
+ * Author URI:		https://github.com/GOSD-DICT
+ * License:			MIT License
+ * License URI:		http://www.opensource.org/licenses/mit-license.php
+ * Tags: 			theme-options, rtl-language-support, featured-images, editor-style, custom-menu, 
+ *					responsive-layout, right-sidebar, left-sidebar, one-column, two-columns, three-columns
+ */
+
+
+ /** Your style here **/ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Carter+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+
+}
+

@@ -1,0 +1,3 @@
+<div class="poppins-regular container-fluid ms-2 py-3 mx-5 fs-4 pb-5" style="text-align: justify; border-left:5px solid #00B518;">
+    Welcome to the <strong>Official Memorandum Order (MO) Archive for the Local Government Unit of Labo</strong>. This dedicated resource provides centralized access to all publicly available Memorandum Orders issued by our office. Designed for convenience and transparency, this archive allows citizens, departments, and stakeholders to easily search, view, and download official directives, circulars, and announcements. Use the categories and search filters below to quickly locate the specific MO by year, topic, or department to ensure you have the most current information.
+</div>
