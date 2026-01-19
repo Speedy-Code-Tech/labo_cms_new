@@ -1,30 +1,38 @@
 <style>
-    #post-<?php the_ID(); ?>{
-        display: flex;
+#post-<?php the_ID();
+
+?> {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #post-<?php the_ID();
+
+    ?> {
+        flex-direction: column;
     }
-    
-     @media only screen and (max-width: 600px) {
-		#post-<?php the_ID(); ?>{
-            flex-direction: column;
-        }
-      
-	}
 
-	@media only screen and (min-width: 600px) {
-		#post-<?php the_ID(); ?>{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-     
-	}
+}
 
-	@media only screen and (min-width: 768px) {
-		 #post-<?php the_ID(); ?>{
-            flex-direction: row;
-        }
-     
-	}
+@media only screen and (min-width: 600px) {
+    #post-<?php the_ID();
+
+    ?> {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #post-<?php the_ID();
+
+    ?> {
+        flex-direction: row;
+    }
+
+}
 </style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('callout secondary'); ?>>
@@ -43,13 +51,15 @@
     <div class="entry-wrapper <?php echo $content_class; ?> medium-12 small-12">
         <!-- entry-header -->
         <header class="entry-header">
-            <h3 class="entry-title poppins-semibold" style="color:#00B518;"><a href="<?php the_permalink(); ?>" rel="bookmark" style="color:#00B518;"><?php the_title(); ?></a></h2>
+            <h3 class="entry-title poppins-semibold" style="color:#00B518;"><a href="<?php the_permalink(); ?>"
+                    rel="bookmark" style="color:#00B518;"><?php the_title(); ?></a></h2>
                 <p class="poppins-regular p-0 m-0 text-secondary">Author: <?= get_the_author(); ?></p>
-                <p class="poppins-regular p-0 m-0 text-secondary" style="text-size:5px;">Date Posted: <?= get_the_date(); ?></p>
+                <p class="poppins-regular p-0 m-0 text-secondary" style="text-size:5px;">Date Posted:
+                    <?= get_the_date(); ?></p>
                 <?php if ('post' == get_post_type()) : ?>
-                    <div class="entry-meta poppins-regular">
-                        <?php gwt_wp_posted_on(); ?>
-                    </div>
+                <div class="entry-meta poppins-regular">
+                    <?php gwt_wp_posted_on(); ?>
+                </div>
                 <?php endif; ?>
         </header>
 
@@ -57,31 +67,31 @@
         <!-- entry-summary entry-content -->
         <?php if (is_search()) : // Only display Excerpts for Search 
         ?>
-            <div class="entry-summary">
-                <?php
+        <div class="entry-summary">
+            <?php
                 $excerpt = get_the_excerpt();
                 if (strlen($excerpt) > 200) {
                     $excerpt = mb_substr($excerpt, 0, 200) . '...';
                 }
                 echo '<p>' . esc_html($excerpt) . '</p>';
                 ?>
-                <?php
+            <?php
                 wp_link_pages(['before' => '<div class="page-links">' . __('Pages:', 'gwt_wp'), 'after'  => '</div>']);
                 ?>
-            </div>
+        </div>
         <?php else : ?>
-            <div class="entry-content">
-                <?php
+        <div class="entry-content">
+            <?php
                 $excerpt = get_the_excerpt();
                 if (strlen($excerpt) > 200) {
                     $excerpt = mb_substr($excerpt, 0, 200) . '...';
                 }
                 echo '<p>' . esc_html($excerpt) . '</p>';
                 ?>
-                <?php
+            <?php
                 wp_link_pages(['before' => '<div class="page-links">' . __('Pages:', 'gwt_wp'), 'after'  => '</div>']);
                 ?>
-            </div>
+        </div>
         <?php endif; ?>
 
         <!-- footer entry-meta -->

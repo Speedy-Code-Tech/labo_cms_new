@@ -1,8 +1,8 @@
 <div class="pt-5 container-fluid">
-    <h2 class="border border-top-0 border-end-0 border-bottom-0 border-2 border-success ps-3 mb-4">
-        TOURISM & ACTIVITY
-    </h2>
 
+    <h2 class="fw-bold fs-1 mb-5 position-relative d-inline-block">
+        <span class="border-start border-4 border-success ps-3">TOURISM & ACTIVITY</span>
+    </h2>
     <div class="row g-4">
         <?php
         // Correct way to query multiple categories

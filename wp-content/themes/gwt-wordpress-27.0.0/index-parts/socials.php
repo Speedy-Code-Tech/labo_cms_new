@@ -6,27 +6,28 @@
 
     <!-- Responsive Grid: 1–4 columns depending on screen size -->
     <div class="row g-4 justify-content-center">
-
-        <!-- Card 1: Labo Tourism -->
+        <!-- Card 4: DWLB FM Labo -->
         <div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
-            <a href="https://www.facebook.com/LaboCamNorteTourism" target="_blank" class="text-decoration-none d-block h-100">
+            <a href="https://www.facebook.com/dwlb897fmlabo" target="_blank" class="text-decoration-none d-block h-100">
                 <div class="social-card-greens rounded-4 overflow-hidden shadow-lg hover-lift h-100 d-flex flex-column">
                     <div style="background-color: #03720D;" class="text-white p-4 text-center flex-shrink-0">
-                        <h5 class="mb-0 fw-bold">Labo Camarines Norte Tourism</h5>
+                        <h5 class="mb-0 fw-bold">DWLB 89.7 FM Labo</h5>
                     </div>
                     <div class="fb-page flex-grow-1 d-flex justify-content-center align-items-start p-3 bg-white"
-                        data-href="https://www.facebook.com/LaboCamNorteTourism"
+                        data-href="https://www.facebook.com/dwlb897fmlabo"
                         data-tabs="timeline"
                         data-width=""
                         data-height="450"
                         data-small-header="true"
                         data-adapt-container-width="true"
                         data-hide-cover="false"
-                        data-show-facepile="false">
+                        data-show-facepile="true">
                     </div>
                 </div>
             </a>
         </div>
+
+ 
 
         <!-- Card 2: Mayor's Page -->
         <div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
@@ -70,22 +71,22 @@
             </a>
         </div>
 
-        <!-- Card 4: DWLB FM Labo -->
+       <!-- Card 1: Labo Tourism -->
         <div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
-            <a href="https://www.facebook.com/dwlb897fmlabo" target="_blank" class="text-decoration-none d-block h-100">
+            <a href="https://www.facebook.com/LaboCamNorteTourism" target="_blank" class="text-decoration-none d-block h-100">
                 <div class="social-card-greens rounded-4 overflow-hidden shadow-lg hover-lift h-100 d-flex flex-column">
                     <div style="background-color: #03720D;" class="text-white p-4 text-center flex-shrink-0">
-                        <h5 class="mb-0 fw-bold">DWLB 89.7 FM Labo</h5>
+                        <h5 class="mb-0 fw-bold">Labo Camarines Norte Tourism</h5>
                     </div>
                     <div class="fb-page flex-grow-1 d-flex justify-content-center align-items-start p-3 bg-white"
-                        data-href="https://www.facebook.com/dwlb897fmlabo"
+                        data-href="https://www.facebook.com/LaboCamNorteTourism"
                         data-tabs="timeline"
                         data-width=""
                         data-height="450"
                         data-small-header="true"
                         data-adapt-container-width="true"
                         data-hide-cover="false"
-                        data-show-facepile="true">
+                        data-show-facepile="false">
                     </div>
                 </div>
             </a>

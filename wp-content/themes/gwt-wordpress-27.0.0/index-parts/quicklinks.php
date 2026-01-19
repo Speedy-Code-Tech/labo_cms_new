@@ -1,6 +1,7 @@
 <div class="pt-5 container-fluid">
-    <h2 class="border border-top-0 border-end-0 border-bottom-0 border-2 border-success ps-3 mb-4">QUICK LINKS</h2>
-
+    <h2 class="fw-bold fs-1 mb-5 position-relative d-inline-block">
+        <span class="border-start border-4 border-success ps-3">QUICK LINKS</span>
+    </h2>
     <div class="row gap-4 d-flex flex-column flex-md-row  justify-content-center align-items-center">
         <div style="height: 200px;" class="t1 quick-links d-flex gap-4 justify-content-center align-items-center p-3 card col-12 col-md-3 bg-white shadow rounded">
             <img style="width:50px; height:50px;" src="<?= get_template_directory_uri() . '/images/star.png' ?>" />

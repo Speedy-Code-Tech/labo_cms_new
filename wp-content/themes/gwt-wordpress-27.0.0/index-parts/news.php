@@ -14,11 +14,10 @@
 </style>
 
 <div class="pt-5 container-fluid">
-    <h2 class="border border-top-0 border-end-0 border-bottom-0 border-2 border-success ps-3 mb-5 fw-bold">
-        FLASH UPDATES
+     <h2 class="fw-bold fs-1 mb-5 position-relative d-inline-block">
+        <span class="border-start border-4 border-success ps-3">FLASH UPDATES</span>
     </h2>
-
-    <?php
+ <?php
     $news_query = new WP_Query(array(
         'category_name'  => 'news',
         'posts_per_page' => 4,

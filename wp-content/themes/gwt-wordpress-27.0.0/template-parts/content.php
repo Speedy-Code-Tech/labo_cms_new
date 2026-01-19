@@ -63,22 +63,22 @@ $target = str_replace("8217", "", $dat_no_punc);
 
 ?>
 <?php if ($title == "ACCOMODATIONS" || $title == "FUN AND ADVENTURE IN LABO" || 	$title == "RESTAURANTS"): ?>
-	<div class="post-box ">
-	<?php else: ?>
-		<div class="post-box container-fluid ">
+<div class="post-box ">
+    <?php else: ?>
+    <div class="post-box container-fluid ">
 
-		<?php endif; ?>
-		<?php if ($val == 1 && $title == "ACCOMODATIONS"):
+        <?php endif; ?>
+        <?php if ($val == 1 && $title == "ACCOMODATIONS"):
 		?>
-		<?php require(get_template_directory() . '/template-parts/custom/accommodation.php');
+        <?php require(get_template_directory() . '/template-parts/custom/accommodation.php');
 		?>
 
-		<?php elseif ($val == 1 && $title == "FUN AND ADVENTURE IN LABO" || 	$title == "RESTAURANTS"):
+        <?php elseif ($val == 1 && $title == "FUN AND ADVENTURE IN LABO" || 	$title == "RESTAURANTS"):
 			require(get_template_directory() . '/template-parts/custom/fun_restaurants.php');
 
 		?>
 
-			<?php else:
+        <?php else:
 			if ($dat == "ECONOMIC DEVELOPMENT" || $dat == "FISCAL MANAGEMENT" || $dat == "INFRASTRUCTURE"  || $dat == "PUBLIC ADMINISTRATION" || $dat == "SOCIAL SERVICES"):
 				
 				require(get_template_directory() . '/template-parts/custom/department_post.php');
@@ -87,19 +87,20 @@ $target = str_replace("8217", "", $dat_no_punc);
 				require(get_template_directory() . '/template-parts/custom/memorandum.php');
 			?>
 
-			<?php elseif (strtolower($target) == strtolower($target_no_punc)): //CITIZENS CHARTER ONLY!
+        <?php elseif (strtolower($target) == strtolower($target_no_punc)): //CITIZENS CHARTER ONLY!
 
 				require(get_template_directory() . '/template-parts/custom/charter.php');
 			?>
-			<?php elseif ($data == "DOWNLOADABLE FORMS"): ?> <!--  DOWNLOADABLE FORMS ONLY -->
+        <?php elseif ($data == "DOWNLOADABLE FORMS"): ?>
+        <!--  DOWNLOADABLE FORMS ONLY -->
 
-				<?php
+        <?php
 				require(get_template_directory() . '/template-parts/custom/downloadable_forms.php');
 				?>
 
-			<?php elseif ($data == "FACTS AND FIGURES"): ?>
+        <?php elseif ($data == "FACTS AND FIGURES"): ?>
 
-				<?php else:
+        <?php else:
 				$isBrgy = 0;
 				$barangay1 = [
 					"anahaw",
@@ -159,10 +160,10 @@ $target = str_replace("8217", "", $dat_no_punc);
 				if (in_array(trim(strtolower($data)), $barangay1, true)):
 					require(get_template_directory() . '/template-parts/custom/brgy-display.php');
 				?>
-				<?php else:
+        <?php else:
 					require(get_template_directory() . '/template-parts/custom/default-template.php');
 				?>
-				<?php endif; ?>
-			<?php endif; ?>
-		<?php endif; ?>
-		</div>
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php endif; ?>
+    </div>

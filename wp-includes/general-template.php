@@ -3547,8 +3547,8 @@ function rsd_link() {
  */
 function wp_strict_cross_origin_referrer() {
 	?>
-	<meta name='referrer' content='strict-origin-when-cross-origin' />
-	<?php
+<meta name='referrer' content='strict-origin-when-cross-origin' />
+<?php
 }
 
 /**

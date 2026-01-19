@@ -13,117 +13,128 @@ include_once('inc/banner.php');
 ?>
 <?php govph_displayoptions('govph_panel_top'); ?>
 <style>
-	iframe {
-		width: 100%;
-	}
+iframe {
+    width: 100%;
+}
 </style>
 <div id="main-content" class="container-main jes" role="document">
-	<div class="mainBg1"></div>
-	<div class="row">
-		<?php
+    <div class="mainBg1"></div>
+    <div class="row">
+        <?php
 		$dat = single_cat_title('', false);
 
 		if ($dat == "HOME"): ?>
-			<div id="content" class="<?php govph_displayoptions('govph_content_position'); ?>columns" role="main">
-			<?php else: ?>
-				<div id="content" class="container-fluid columns" role="main">
-				<?php endif ?>
-				<?php
+        <div id="content" class="<?php govph_displayoptions('govph_content_position'); ?>columns" role="main">
+            <?php else: ?>
+            <div id="content" class="container-fluid columns" role="main">
+                <?php endif ?>
+                <?php
 				while (have_posts()) :
 					the_post();
 					$categories = get_the_category();
 					$cat_name = !empty($categories) ? $categories[0]->name : '';
 					if ($cat_name == 'NEWS'):
 				?>
-						<style>
-							#post-<?php the_ID(); ?> {
-								padding: 0 20px;
-							}
+                <style>
+                #post-<?php the_ID();
 
-							#post-<?php the_ID(); ?>.entry-content p {
-								text-align: justify;
-							}
-						</style>
+                ?> {
+                    padding: 0 20px;
+                }
 
-						<div id="#post-<?php the_ID(); ?>" class="container-fluid d-flex flex-column justify-content-center align-items-center mb-4">
-							<?php if (get_the_post_thumbnail_url()) { ?>
-								<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="rounded" style="width: 500px;" alt="<?php the_title_attribute(); ?>">
+                #post-<?php the_ID();
 
-							<?php } ?>
+                ?>.entry-content p {
+                    text-align: justify;
+                }
+                </style>
 
-							<p class="h4  px-1 px-sm-5 mx-1 mx-sm-5 text-center mt-3 fw-bold" style="color: #00B518;"><?php the_title(); ?></p>
-							<p class="p-0 m-0 text-secondary">Author: <?= get_the_author(); ?></p>
-							<p class="p-0 m-0 text-secondary" style="text-align:justify; font-size: 12px;">Date Posted: <?= get_the_date(); ?></p>
-						</div>
-					<?php
+                <div id="#post-<?php the_ID(); ?>"
+                    class="container-fluid d-flex flex-column justify-content-center align-items-center mb-4">
+                    <?php if (get_the_post_thumbnail_url()) { ?>
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="rounded" style="width: 500px;"
+                        alt="<?php the_title_attribute(); ?>">
+
+                    <?php } ?>
+
+                    <p class="h4  px-1 px-sm-5 mx-1 mx-sm-5 text-center mt-3 fw-bold" style="color: #00B518;">
+                        <?php the_title(); ?></p>
+                    <p class="p-0 m-0 text-secondary">Author: <?= get_the_author(); ?></p>
+                    <p class="p-0 m-0 text-secondary" style="text-align:justify; font-size: 12px;">Date Posted:
+                        <?= get_the_date(); ?></p>
+                </div>
+                <?php
 						get_template_part('template-parts/content', 'single');
 					else: ?>
 
-						<div class="container-fluid d-flex flex-column flex-md-row gap-5">
-							<div class="flex-shrink-0">
-								<?php if (get_the_post_thumbnail_url()) { ?>
-									<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="rounded" style="width: 500px;" alt="<?php the_title_attribute(); ?>">
+                <div class="container-fluid d-flex flex-column flex-md-row gap-5">
+                    <div class="flex-shrink-0">
+                        <?php if (get_the_post_thumbnail_url()) { ?>
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="rounded" style="width: 500px;"
+                            alt="<?php the_title_attribute(); ?>">
 
-								<?php } ?>
-							</div>
-							<div class="container-fluid">
-								<div class="headers d-flex flex-column justify-content-start align-items-start mb-4">
-									<h2 class="p-0 m-0" style="color:#00B518; font-weight: bold; font-size:2em;"><?= the_title(); ?></h2>
-									<div class="lines mt-2" style="width:150px; height:4px; background:#4956FF; border-radius: 20px;"></div>
-								</div>
+                        <?php } ?>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="headers d-flex flex-column justify-content-start align-items-start mb-4">
+                            <h2 class="p-0 m-0" style="color:#00B518; font-weight: bold; font-size:2em;">
+                                <?= the_title(); ?></h2>
+                            <div class="lines mt-2"
+                                style="width:150px; height:4px; background:#4956FF; border-radius: 20px;"></div>
+                        </div>
 
-								<?php if (is_numeric(get_the_title())) { ?>
-									<style>
-										.wp-block-file>a {
-											font-size: 20px;
-											padding-left: 20px;
-											;
-											/* color: #373737; */
-										}
+                        <?php if (is_numeric(get_the_title())) { ?>
+                        <style>
+                        .wp-block-file>a {
+                            font-size: 20px;
+                            padding-left: 20px;
+                            ;
+                            /* color: #373737; */
+                        }
 
-										.wp-block-file>a:hover {
-											color: #00B518;
-											font-weight: bold;
-										}
+                        .wp-block-file>a:hover {
+                            color: #00B518;
+                            font-weight: bold;
+                        }
 
-										.wp-block-file>a::before {
-											content: " - ";
-										}
-									</style>
-								<?php } ?>
-								<div class="container-fluid pe-3" style="text-align:justify; border-right: #00B518 2px solid;">
-									<?php
+                        .wp-block-file>a::before {
+                            content: " - ";
+                        }
+                        </style>
+                        <?php } ?>
+                        <div class="container-fluid pe-3" style="text-align:justify; border-right: #00B518 2px solid;">
+                            <?php
 									get_template_part('template-parts/content', 'single');
 									?>
-								</div>
-							</div>
-						</div>
-				<?php
+                        </div>
+                    </div>
+                </div>
+                <?php
 
 
 					endif;
 				endwhile; //end of the loop 
 				?>
-				</div><!-- end content -->
+            </div><!-- end content -->
 
-				<?php
+            <?php
 				$dat = single_cat_title('', false);
 				if ($dat == "NEWS"): ?>
-					<?php
+            <?php
 					if (is_active_sidebar('left-sidebar')) {
 						govph_displayoptions('govph_sidebar_left');
 					}
 					?>
-				<?php
+            <?php
 					if (is_active_sidebar('right-sidebar')) {
 						govph_displayoptions('govph_sidebar_right');
 					}
 				endif;
 				?>
 
-			</div><!-- end row -->
-	</div><!-- end main -->
+        </div><!-- end row -->
+    </div><!-- end main -->
 
-	<?php govph_displayoptions('govph_panel_bottom'); ?>
+    <?php govph_displayoptions('govph_panel_bottom'); ?>
 
-	<?php get_footer(); ?>
+    <?php get_footer(); ?>

@@ -1,10 +1,10 @@
 <?php
 
-//  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
-//     $_SERVER['HTTPS']='on';
+  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+     $_SERVER['HTTPS']='on';
 
-define( 'WP_HOME', 'http://localhost/lgu_cms/' );
-define( 'WP_SITEURL', 'http://localhost/lgu_cms/' );
+define( 'WP_HOME', 'https://labocamnorte.site/' );
+define( 'WP_SITEURL', 'https://labocamnorte.site/' );
 define( 'WP_INDEX', '/' );
 /**
  * The base configuration for WordPress
@@ -33,7 +33,7 @@ define( 'DB_NAME', 'lgu_cms' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'P@55word' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

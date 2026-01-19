@@ -1,0 +1,52 @@
+<section class="profile-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="profile-card p-4 p-md-5">
+                    <div class="row align-items-center g-5">
+                        <!-- Text Column -->
+                        <div class="col-md-7">
+                            <h2 class="profile-title text-center text-md-start">
+                                Hon. Severino H. Francisco Jr.
+                            </h2>
+                            <div class="profile-text">
+                                <p>
+                                    With an unwavering commitment to serve the people of Labo, Camarines Norte,
+                                    <strong class="highlight-name">Hon. Severino H. Francisco Jr.</strong> has dedicated himself
+                                    to uplifting the municipality through dynamic leadership and people-centered programs.
+                                </p>
+                                <p>
+                                    A seasoned public servant, he has honed his knowledge and skills to spearhead transformative
+                                    initiatives in governance, agriculture, education, and community development — earning him
+                                    numerous recognitions, including the recent Certificate of Commendation and Plaque of Appreciation
+                                    from the League of Municipalities and various government agencies.
+                                </p>
+                                <p>
+                                    Guided by integrity, inclusivity, and innovation, Mayor Francisco continues to lead Labo
+                                    toward sustainable progress, ensuring that every barangay benefits from responsive governance
+                                    and meaningful development.
+                                </p>
+                                <p class="fw-bold text-success">
+                                    Together, let us build a brighter, stronger, and more prosperous Labo!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Image Column -->
+                        <div class="col-md-5 text-center">
+                            <img src="https://via.placeholder.com/500x650/1a5d8a/ffffff?text=Mayor+Francisco" 
+                                 alt="Hon. Severino H. Francisco Jr., Municipal Mayor of Labo" 
+                                 class="img-fluid profile-img">
+                            <div class="mt-3">
+                                <small class="text-muted">
+                                    Hon. Severino H. Francisco Jr.<br>
+                                    <strong>Municipal Mayor</strong> • Labo, Camarines Norte
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
